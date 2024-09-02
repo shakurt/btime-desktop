@@ -6,7 +6,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-Thin.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-Thin.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-Thin.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Thin.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Thin.ttf') format('truetype');
   font-weight: 100;
@@ -17,7 +19,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-Light.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-Light.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-Light.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Light.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Light.ttf') format('truetype');
   font-weight: 300;
@@ -28,7 +32,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-ExtraLight.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-ExtraLight.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-ExtraLight.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-ExtraLight.ttf') format('truetype');
   font-weight: 200;
@@ -39,7 +45,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-Medium.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-Medium.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-Medium.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Medium.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -50,7 +58,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-SemiBold.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-SemiBold.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-SemiBold.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-SemiBold.ttf') format('truetype');
   font-weight: 600;
@@ -61,7 +71,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-Bold.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-Bold.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-Bold.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Bold.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -72,7 +84,9 @@
 @font-face {
   font-family: 'Vazir';
   src: url('./assets/fonts/vazir/Vazirmatn-FD-Black.eot');
-  src: url('./assets/fonts/vazir/Vazirmatn-FD-Black.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('./assets/fonts/vazir/Vazirmatn-FD-Black.eot?#iefix')
+      format('embedded-opentype'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Black.woff2') format('woff2'),
     url('./assets/fonts/vazir/Vazirmatn-FD-Black.ttf') format('truetype');
   font-weight: 900;
@@ -126,7 +140,7 @@ body {
     background: #dddddd30;
   }
 
-  body.transparent-active .text-gray-trasnparent {
+  body.transparent-active .text-gray-transparent {
     color: #e0e0e0;
   }
 

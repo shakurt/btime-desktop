@@ -91,7 +91,7 @@ function App() {
                 className="flex flex-row items-center  justify-around  w-full flex-wrap gap-2"
               >
                 <div className="flex-1 flex flex-row gap-1 w-52 justify items-end truncate ">
-                  <div className="text-[.9rem] flex flex-col text-gray-600 text-gray-trasnparent  dark:text-[#eee] truncate">
+                  <div className="text-[.9rem] flex flex-col text-gray-600 text-gray-transparent  dark:text-[#eee] truncate">
                     <div className="flex-1 flex flex-row w-52 items-center justify-end mt-1 p-2 rounded-full truncate ">
                       <div>
                         <div
@@ -109,11 +109,11 @@ function App() {
                   </div>
                 </div>
                 <div className="flex-2 flex flex-col justify items-end truncate ">
-                  <p className="text-[1rem] text-gray-600 text-gray-trasnparent dark:text-[#d3d3d3]">
+                  <p className="text-[1rem] text-gray-600 text-gray-transparent dark:text-[#d3d3d3]">
                     {currency.todyPrice.toLocaleString()}
                   </p>
                   <p
-                    className="text-xs font-light text-gray-600 text-gray-trasnparent dark:text-[#cbc9c9]"
+                    className="text-xs font-light text-gray-600 text-gray-transparent dark:text-[#cbc9c9]"
                     dir="ltr"
                   >
                     1 {currency.code}
@@ -124,7 +124,7 @@ function App() {
           </div>
           {hoveredCurrency && (
             <div
-              className="text-gray-600 text-gray-trasnparent dark:text-[#cbc9c9] font-light text-xs mt-2 transition-all duration-300 ease-in-out px-5"
+              className="text-gray-600 text-gray-transparent dark:text-[#cbc9c9] font-light text-xs mt-2 transition-all duration-300 ease-in-out px-5"
               dir="rtl"
             >
               برای جابجایی این ویجت، این قسمت را کلیک کرده و نگه دارید و سپس به

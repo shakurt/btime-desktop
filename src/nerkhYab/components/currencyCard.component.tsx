@@ -38,67 +38,65 @@ export function CurrencyInfoCard() {
   }, [currencyData, currency])
 
   return (
-    <div
-      className="flex flex-col gap-6 h-full justify-around items-center relative"
-      dir="ltr"
-    >
-      <div className="flex flex-row items-center justify-around  w-full flex-wrap gap-2">
-        <div
-          className={`
-           w-24 h-24 absolute rounded-full z-0 -left-7 blur-lg`}
-          style={{
-            backgroundImage: `radial-gradient(50% 50% at 50% 50%, ${imgColor} 35%, ${imgColor + '00'} 30%)`,
-          }}
-        ></div>
-        <div>
-          {loading ? (
-            <div className="h-10 w-10 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700"></div>
-          ) : (
+    <article className="space-y-3 my-2">
+      <section className="flex items-center justify-around">
+        {loading ? (
+          <div
+            className="w-12 h-12 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700"
+            aria-label="currency image container loading"
+          />
+        ) : (
+          <div
+            className="w-12 h-12 relative rounded-full"
+            aria-label="currency image container"
+          >
+            <img
+              src={currencyData.icon}
+              className="w-10 h-10 rounded-full"
+              alt="currency country flag"
+            />
             <div
-              className={`w-10 h-10 relative flex rounded-full overflow-hidden`}
+              className="h-full w-full blur-lg absolute top-0 left-0"
               style={{
-                backdropFilter: 'blur(100px)',
+                backgroundImage: `radial-gradient(50% 50% at 50% 50%, ${imgColor} 50%, ${imgColor + '00'} 45%)`,
               }}
-            >
-              <img src={currencyData.icon} className="object-cover" />
-            </div>
-          )}
-        </div>
-        <div className="flex flex-col w-32 justify items-end truncate">
+            />
+          </div>
+        )}
+
+        <div aria-label="currency text container">
           {loading ? (
-            <div className="h-5 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700 w-20 mb-2.5"></div>
+            <div className="h-5 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700 w-20 mb-2.5" />
           ) : (
-            <h3
-              className="text-[1.1rem] font-normal  text-gray-600 text-gray-trasnparent dark:text-[#eee] truncate w-32"
-              dir="rtl"
-            >
+            <h3 className="text-lg font-normal text-right text-gray-600 text-gray-transparent dark:text-[#eee] truncate">
               {currencyData.name}
             </h3>
           )}
         </div>
-      </div>
-      <div className="flex flex-row w-full  items-center">
+      </section>
+      <section className="flex items-center justify-around">
         <div className="flex flex-col">
           <div>
             {loading ? (
               <div className="h-2 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700 w-10 mb-2.5"></div>
             ) : (
-              <p className="text-[1.2rem]  text-gray-600 text-gray-trasnparent dark:text-[#d3d3d3]">
+              <p className="text-[1.2rem]  text-gray-600 text-gray-transparent dark:text-[#d3d3d3]">
                 {currencyData.todyPrice.toLocaleString()}
               </p>
             )}
           </div>
           <div>
             {loading ? (
-              <div className="h-2 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700 w-5 mb-2.5"></div>
+              <div className="h-2 animate-pulse bg-gray-200 rounded-full dark:bg-gray-700 w-5 mb-2.5" />
             ) : (
-              <p className="text-xs font-light text-gray-600 text-gray-trasnparent dark:text-[#cbc9c9]">
+              <p className="text-xs font-light text-gray-600 text-gray-transparent dark:text-[#cbc9c9]">
                 1 {currency.toUpperCase()}
               </p>
             )}
           </div>
         </div>
-      </div>
-    </div>
+        <div className="w-[60px]" />
+      </section>
+    </article>
   )
 }

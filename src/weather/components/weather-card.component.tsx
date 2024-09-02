@@ -35,7 +35,7 @@ export function WeatherComponent({
         </div>
         <div className="flex-1 text-2xl w-20 text-center truncate mt-1 relative">
           <div
-            className="z-10 text-gray-trasnparent dark:text-[#eee]"
+            className="z-10 text-gray-transparent dark:text-[#eee]"
             style={{
               color:
                 isActiveTransparent && !isDarkMode
@@ -53,8 +53,8 @@ export function WeatherComponent({
           </div>
         </div>
       </div>
-      <div className="flex flex-col  text-center text-gray-600 text-gray-trasnparent dark:text-[#eee] font-bold z-10">
-        <div className="w-auto truncate font-normal text-center text-gray-600 text-gray-trasnparent dark:text-[#e7e4e4]">
+      <div className="flex flex-col  text-center text-gray-600 text-gray-transparent dark:text-[#eee] font-bold z-10">
+        <div className="w-auto truncate font-normal text-center text-gray-600 text-gray-transparent dark:text-[#e7e4e4]">
           {weather.weather.temperature.temp_description}
         </div>
         <div className="flex flex-row mt-2 justify-around font-light rounded-md py-2 w-40">
