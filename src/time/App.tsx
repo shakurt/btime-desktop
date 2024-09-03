@@ -2,15 +2,7 @@ import { useEffect, useState } from 'react'
 import { Slider } from '../components/slider'
 
 function App() {
-  const [showArrows, setShowArrows] = useState<boolean>(false)
-
-  function onMouseEnter() {
-    setShowArrows(true)
-  }
-
-  function onMouseLave() {
-    setShowArrows(false)
-  }
+  const [showArrows, setShowArrows] = useState(false)
 
   useEffect(() => {
     const handleColorSchemeChange = (e) => {
@@ -35,15 +27,17 @@ function App() {
   }, [])
 
   return (
-    <>
-      <div
-        className="h-screen w-screen"
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLave}
-      >
-        <Slider showArrows={showArrows} />
-      </div>
-    </>
+    <button
+      className="h-screen w-screen cursor-default"
+      onMouseEnter={() => {
+        setShowArrows(true)
+      }}
+      onMouseLeave={() => {
+        setShowArrows(false)
+      }}
+    >
+      <Slider showArrows={showArrows} />
+    </button>
   )
 }
 
