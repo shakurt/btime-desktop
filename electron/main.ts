@@ -72,7 +72,7 @@ async function onAppReady() {
       y: btimeStore.bounds.y,
       title: widgetKey.BTime,
       html: 'index.html',
-      devTools: false,
+      devTools: true,
       alwaysOnTop: btimeStore.alwaysOnTop,
       reziable: true,
     })
